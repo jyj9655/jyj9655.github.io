@@ -5,7 +5,6 @@ subtitle: 코딩 테스트에 많이 출제가 되는 3가지 정렬을 python�
 author: Jeffrey
 categories: jekyll
 banner:
-  video: https://vjs.zencdn.net/v/oceans.mp4
   loop: true
   volume: 0.8
   start_at: 8.5
