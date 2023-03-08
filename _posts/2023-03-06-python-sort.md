@@ -2,8 +2,8 @@
 layout: post
 title: 선택 정렬, 삽입 정렬, 퀵 정렬
 subtitle: 코딩 테스트에 많이 출제가 되는 3가지 정렬을 python과 java로 알아보자.
-author: Jeffrey
-categories: jekyll
+author: jyj9655
+categories: python
 banner:
   loop: true
   volume: 0.8
