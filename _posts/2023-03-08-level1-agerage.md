@@ -1,9 +1,9 @@
 ---
 layout: post
-title: (레벨 1) 평균 구하기 (Java, Python)
-subtitle: 코딩 테스트에 많이 출제가 되는 3가지 정렬을 python과 java로 알아보자.
+title: (레벨 1) 평균 구하기 [자바, 파이썬]
+subtitle: 평균 구하기 (프로그래머스 레벨 1)
 author: jyj9655
-categories: codingTest
+categories: 코딩테스트
 banner:
   loop: true
   volume: 0.8
@@ -15,21 +15,28 @@ banner:
   min_height: "38vh"
   heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
   subheading_style: "color: gold"
-tags: python java codingTest average
+tags: 프로그래머스 파이썬 자바 코딩테스트 평균 레벨1
 sidebar: []
 ---
-* * *
+
+---
+
 ## 문제
+
 수를 담고 있는 배열 arr의 평균값을 return하는 함수, solution 만들기
 
 ### 문제 링크
+
 [[프로그래머스] 레벨1 평균구하기](https://school.programmers.co.kr/learn/courses/30/lessons/12944)
 
 ### 접근방법
+
 배열의 합을 저장할 변수 만들어서 배열의 길이로 나누기
 
 ### java
+
 #### Solution 1
+
 ```java
 class Solution {
     public double solution(int[] arr) {
@@ -42,7 +49,9 @@ class Solution {
     }
 }
 ```
+
 #### Solution 2
+
 ```java
 import java.util.*;
 import java.lang.*;
@@ -54,10 +63,14 @@ class Solution {
     }
 }
 ```
-* * *   
+
+---
+
 ### python
+
 ```python
 def solution(arr):
     return sum(arr)/len(arr)
 ```
-* * *
+
+---

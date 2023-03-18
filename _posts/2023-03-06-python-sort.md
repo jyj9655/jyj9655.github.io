@@ -3,7 +3,7 @@ layout: post
 title: 선택 정렬, 삽입 정렬, 퀵 정렬
 subtitle: 코딩 테스트에 많이 출제가 되는 3가지 정렬을 python과 java로 알아보자.
 author: jyj9655
-categories: python
+categories: 알고리즘
 banner:
   loop: true
   volume: 0.8
@@ -18,10 +18,15 @@ banner:
 tags: python java sort
 sidebar: []
 ---
-* * *
+
+---
+
 ## 선택 정렬
+
 선택 정렬은 주어진 배열에서 가장 작은 값을 찾아 맨 앞으로 이동시키는 과정을 반복하여 정렬하는 알고리즘입니다.
+
 ### python
+
 ```python
 def selection_sort(arr):
     n = len(arr)
@@ -33,7 +38,9 @@ def selection_sort(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 ```
+
 ### java
+
 ```java
 public static void selectionSort(int[] arr) {
     int n = arr.length;
@@ -50,10 +57,15 @@ public static void selectionSort(int[] arr) {
     }
 }
 ```
-* * *
+
+---
+
 ## 삽입 정렬
+
 삽입 정렬은 배열을 순회하면서 각 원소를 이미 정렬된 배열에서 적절한 위치에 삽입하는 방법으로 정렬하는 알고리즘입니다.
+
 ### python
+
 ```python
 def insertion_sort(arr):
     n = len(arr)
@@ -66,7 +78,9 @@ def insertion_sort(arr):
         arr[j+1] = key
     return arr
 ```
+
 ### java
+
 ```java
 public static void insertionSort(int[] arr) {
     int n = arr.length;
@@ -81,11 +95,16 @@ public static void insertionSort(int[] arr) {
     }
 }
 ```
-* * *
+
+---
+
 ## 퀵 정렬
-퀵 정렬은 분할 정복 방식을 사용하여 배열을 빠르게 정렬하는 알고리즘입니다.   
+
+퀵 정렬은 분할 정복 방식을 사용하여 배열을 빠르게 정렬하는 알고리즘입니다.  
 배열에서 피벗(pivot)이라는 값을 선택한 후, 피벗보다 작은 값은 왼쪽으로, 큰 값은 오른쪽으로 분할한 후 각각을 재귀적으로 정렬하는 과정을 반복합니다.
+
 ### python
+
 ```python
 def quick_sort(arr):
     if len(arr) <= 1:
@@ -101,7 +120,9 @@ def quick_sort(arr):
             equal.append(i)
     return quick_sort(left) + equal + quick_sort(right)
 ```
+
 ### java
+
 ```java
 public static void quickSort(int[] arr, int left, int right) {
     if (left >= right) {
@@ -136,4 +157,5 @@ private static void swap(int[] arr, int i, int j) {
     arr[j] = temp;
 }
 ```
-* * *
+
+---
